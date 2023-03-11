@@ -1,3 +1,20 @@
 {% extends "layout.html"%}
-{% body %}
-{% end %}
+{% block body %}
+<h1>Welcome to Hogwarts</h1>
+<p>Let me know you, future wizards and witches!</p>
+<form action="" method="post">
+    <label for="name">Name: </label>
+    <input name="name" id="name" type="text"><br>
+    <label for="dorm">Dorm: </label>
+    <select name="dorm" id="dorm">
+        <option value="" disabled selected>Select dorm</option>
+        <option value="Gryffindor">Gryffindor</option>
+        <option value="Slytherin">Slytherin</option>
+        <option value="Huplepuff">Huplepuff</option>
+        <option value="Ravenclaw">Ravenclaw</option>
+    </select><br>
+    <label for="email">email: </label>
+    <input type="email" name="email" id="email">
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

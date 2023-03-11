@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1>Registered Hogwarts</h1>
+<p>
+    <ul>
+        {% for wizard in wizards %}
+            <li>{{ wizard }}</li>
+        {% endfor %}
+    </ul>
+</p>
+{% endblock %}
