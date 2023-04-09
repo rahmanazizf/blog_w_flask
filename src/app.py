@@ -8,6 +8,10 @@ app = Flask(__name__)
 def index():
     return render_template("welcome.html")
 
+@app.route('/login')
+def login():
+    return render_template("login2.html")
+
 @app.route('/register')
 def register_get():
     return render_template("login.html")

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* h1 {
+            text-align: center;
+        }
+
+        body {
+            text-align: center;
+        } */
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  margin-top: 120px;
+  font-size: 36px;
+  /* color: #333; */
+  color: slateblue;
+  text-align: center;
+}
+
+
+input[type="email"],
+input[type="text"],
+input[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: slateblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  margin-top: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  display: inline-block; /* Menampilkan tombol submit dalam satu baris */
+}
+
+form {
+    width: 300px; /* Menentukan lebar form */
+  margin: auto; /* Menempatkan form di tengah */
+  padding: 20px;
+  /* background-color: #fff; */
+  background-color:white;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  text-align: center; /* Meletakkan tombol submit pada tengah form */
+}
+
+p {
+    text-align: center;
+}
+
+#sign-up {
+    font-size: small;
+    padding: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#sign-up-ask {
+    font-size: small;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+
+    </style>
+    <title>Hello World</title>
+</head>
+<body>
+    {% block body %} {% endblock %}
+</body>
+</html>
